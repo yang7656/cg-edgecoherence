@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title>Polygon Filling</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="application/javascript" src="scripts/edgeentry.js"></script>
+    <script type="application/javascript" src="scripts/polygonfill.js"></script>
+</head>
+<body onload="Init()">
+    <div id="wrapper">
+        <div id="content">
+            <h1>Edge Coherence Polygon Filling</h1>
+            <canvas id="view"></canvas>
+            <br/>
+            <div class="spacer"></div>
+            <label for="polygon_type">Polygon: </label>
+            <select id="polygon_type" onchange="SelectNewPolygon()">
+                <option value="convex">Convex</option>
+                <option value="concave">Concave</option>
+                <option value="self_intersect">Self-Intersecting</option>
+                <option value="interior_hole">Interior Hole</option>
+            </select>
+        </div>
+    </div>
+</body>
+</html>
